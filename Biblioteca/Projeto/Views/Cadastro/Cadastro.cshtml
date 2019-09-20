@@ -1,0 +1,156 @@
+﻿
+@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<h1>Cadastro</h1>
+
+<div class="card">
+    <div class="card-body">
+        <!-- Título do grupo junto de uma linha divisória -->
+        <h4 class="my-md-n1">Dados Pessoais</h4>
+        <hr />
+        <!-- Row único com título para o nome -->
+        <div class="form-group">
+            <label for="nomeTitulo">Nome Completo</label>
+            <input type="nome" class="form-control" id="inputNome" placeholder="Seu Jorge">
+        </div>
+        <!-- Row com três caixas de título -->
+        <div class="form-group row">
+            <div class="col-4">
+                <label for="nascimento">Data Nascimento</label>
+                <input type="text" class="form-control align-items-end" id="inputNascimento" placeholder="DD/MM/AA" required>
+            </div>
+            <div class="col-4">
+                <label for="rg">RG</label>
+                <input type="text" class="form-control align-items-end" id="inputRG" placeholder="12.345.678-9" required>
+            </div>
+            <div class="col-4">
+                <label for="cpf">CPF</label>
+                <input type="text" class="form-control align-items-end" placeholder="123.456.789-00" required>
+            </div>
+        </div>
+        <br />
+
+        <!-- Título do grupo junto de uma linha divisória -->
+        <h4 class="my-md-n1">Filiação</h4>
+        <hr />
+        <!-- Row com três caixas de título -->
+        <div class="form-group row">
+            <div class="col-6">
+                <label for="nomePai">Nome do Pai</label>
+                <input type="text" class="form-control align-items-end" id="inputNomePai" placeholder="Juvenal Freitas" required>
+            </div>
+            <div class="col-6">
+                <label for="nomeMae">Nome da Mãe</label>
+                <input type="text" class="form-control align-items-end" id="inputNomeMae" placeholder="Joselina Freitas" required>
+            </div>
+        </div>
+        <br />
+
+        <!-- Título do grupo junto de uma linha divisória -->
+        <h4 class="my-md-n1">Dados Estudantis</h4>
+        <hr />
+        <!-- Row com três caixas de título -->
+        <div class="form-group row">
+            <div class="col-3">
+                <label for="matricula">Matrícula</label>
+                <input type="text" class="form-control align-items-end" id="inputMatrica" placeholder="1234567" required>
+            </div>
+            <div class="col-3">
+                <label for="turma">Turma</label>
+                <input type="text" class="form-control align-items-end" id="inputTurma" placeholder="1A2B" required>
+            </div>
+            <div class="col-3">
+                <label for="horario">Horário</label>
+                <input type="time" class="form-control align-items-end" id="inputTempo">
+            </div>
+            <div class="col-3">
+                <label for="identificacao">Identificação</label>
+                <select class="custom-select form-control align-items-end">
+                    <option selected>Selecione</option>
+                    <option value="1">Aluno</option>
+                    <option value="2">Professor</option>
+                </select>
+            </div>
+        </div>
+        <br />
+
+        <!-- Título do grupo junto de uma linha divisória -->
+        <h4 class="my-md-n1">Informações de Contato</h4>
+        <hr />
+        <!-- Row com três caixas de título -->
+        <div class="form-group row">
+            <div class="col-3">
+                <label for="celular">Celular</label>
+                <input type="text" class="form-control align-items-end" id="inputCelular" placeholder="(12) 34567-8901">
+            </div>
+            <div class="col-3">
+                <label for="telefone">Telefone</label>
+                <input type="text" class="form-control align-items-end" id="inputTelefone" placeholder="(12) 3456-7890" required>
+            </div>
+            <div class="col-3">
+                <label for="telefoneRecado">Telefone de Recados</label>
+                <input type="text" class="form-control align-items-end" placeholder="(12) 3456-7890" required>
+            </div>
+            <div class="col-3">
+                <label for="nomeContato">Nome do Contato</label>
+                <input type="text" class="form-control align-items-end" placeholder="Astolfo Abraham" required>
+            </div>
+        </div>
+        <br />
+        <!-- Row com duas caixas de título -->
+        <div class="form-group row">
+            <div class="col-6">
+                <label for="email">E-Mail</label>
+                <input type="text" class="form-control align-items-end" id="inputEmail" placeholder="email@dominio.com">
+            </div>
+            <div class="col-6">
+                <label for="paginaPessoal">Página Pessoal</label>
+                <input type="text" class="form-control align-items-end" id="inputPaginaPessoal" placeholder="https://www.exemplo.com.br/" required>
+            </div>
+        </div>
+        <br />
+
+        <!-- Título do grupo junto de uma linha divisória -->
+        <h4 class="my-md-n1">Endereço</h4>
+        <hr />
+        <!-- Row com três caixas de título -->
+        <div class="form-group row">
+            <div class="col-4">
+                <label for="cep">CEP</label>
+                <input type="text" class="form-control align-items-end" id="inputCEP" placeholder="12345-67" required>
+            </div>
+            <div class="col-4">
+                <label for="logradouro">Logradouro</label>
+                <input type="text" class="form-control align-items-end" id="inputLogradouro" placeholder="Rua Exemplo, Bairro Exemplo" required>
+            </div>
+            <div class="col-4">
+                <label for="numeroCasa">Número</label>
+                <input type="text" class="form-control align-items-end" id="inputNumeroCasa" placeholder="1234" required>
+            </div>
+        </div>
+        <br />
+        <!-- Row com três caixas de título -->
+        <div class="form-group row">
+            <div class="col-4">
+                <label for="cidade">Cidade</label>
+                <input type="text" class="form-control align-items-end" id="inputCidade" placeholder="Exemplo" required>
+            </div>
+            <div class="col-4">
+                <label for="uf">UF</label>
+                <input type="text" class="form-control align-items-end" id="inputUF" placeholder="Unidade Federal Exemplo" required>
+            </div>
+            <div class="col-4">
+                <label for="pontoReferencia">Ponto Referência</label>
+                <input type="text" class="form-control align-items-end" id="inputReferencia" placeholder="Ao lado de um prédio" required>
+            </div>
+        </div>
+        <br />
+
+        <!-- Row com os dois botões de enviar e cancelar -->
+        <br>
+        <button type="enviar" class="btn btn-primary">Cadastrar</button>
+        <button type="cancelar" class="btn btn-secondary">Cancelar</button>
+    </div>
+</div>

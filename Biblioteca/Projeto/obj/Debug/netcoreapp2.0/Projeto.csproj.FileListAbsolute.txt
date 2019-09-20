@@ -1,0 +1,11 @@
+C:\Users\TI\Desktop\ETEC-DS\Biblioteca\Projeto\bin\Debug\netcoreapp2.0\Projeto.deps.json
+C:\Users\TI\Desktop\ETEC-DS\Biblioteca\Projeto\bin\Debug\netcoreapp2.0\Projeto.runtimeconfig.json
+C:\Users\TI\Desktop\ETEC-DS\Biblioteca\Projeto\bin\Debug\netcoreapp2.0\Projeto.runtimeconfig.dev.json
+C:\Users\TI\Desktop\ETEC-DS\Biblioteca\Projeto\bin\Debug\netcoreapp2.0\Projeto.dll
+C:\Users\TI\Desktop\ETEC-DS\Biblioteca\Projeto\obj\Debug\netcoreapp2.0\Projeto.csprojAssemblyReference.cache
+C:\Users\TI\Desktop\ETEC-DS\Biblioteca\Projeto\obj\Debug\netcoreapp2.0\Projeto.csproj.CoreCompileInputs.cache
+C:\Users\TI\Desktop\ETEC-DS\Biblioteca\Projeto\obj\Debug\netcoreapp2.0\Projeto.AssemblyInfoInputs.cache
+C:\Users\TI\Desktop\ETEC-DS\Biblioteca\Projeto\obj\Debug\netcoreapp2.0\Projeto.AssemblyInfo.cs
+C:\Users\TI\Desktop\ETEC-DS\Biblioteca\Projeto\bin\Debug\netcoreapp2.0\Projeto.pdb
+C:\Users\TI\Desktop\ETEC-DS\Biblioteca\Projeto\obj\Debug\netcoreapp2.0\Projeto.dll
+C:\Users\TI\Desktop\ETEC-DS\Biblioteca\Projeto\obj\Debug\netcoreapp2.0\Projeto.pdb
