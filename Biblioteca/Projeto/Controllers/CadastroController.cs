@@ -8,7 +8,7 @@ namespace Projeto.Controllers
 {
     public class CadastroController : Controller
     {
-        public IActionResult Cadastro()
+        public IActionResult CadastroUsuario()
         {
             return View();
         }
