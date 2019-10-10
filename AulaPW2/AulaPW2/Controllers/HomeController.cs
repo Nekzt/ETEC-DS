@@ -33,17 +33,5 @@ namespace AulaPW2.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
-        public bool Acesso(AcessoModel Acesso)
-        {
-            if ((Acesso.User == "admin" && Acesso.Pass == "batatinha123"))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
     }
 }
