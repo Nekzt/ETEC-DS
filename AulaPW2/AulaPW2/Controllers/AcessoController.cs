@@ -29,7 +29,18 @@ namespace AulaPW2.Controllers
                 return "Usuário não-logado";
             }
         }
-
+        [HttpPost]
+        public string Post([FromBody]AcessoModel acesso)
+        {
+            if (ValidaLogin(acesso))
+            {
+                return "Usuário logado POST";
+            }
+            else
+            {
+                return "Usuário não-logado POST";
+            }
+        }
         public bool ValidaLogin(AcessoModel acesso)
         {
             if (acesso.Usuario == "admin" && acesso.Senha == "potatinho123")
