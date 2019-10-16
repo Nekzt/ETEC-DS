@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using PW2Login.Models;
 
 namespace PW2Login.Controllers
 {
@@ -19,18 +20,37 @@ namespace PW2Login.Controllers
         }
 
         // GET: api/AutenticacaoAPI/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        [HttpGet("{usuario}/{senha}")]
+        public string Get(string usuario, string senha)
         {
-            return "value";
+            AcessoModel acesso = new AcessoModel();
+            acesso.Usuario = usuario;
+            acesso.Senha = senha;
+
+            if (ValidaLogin(acesso))
+            {
+                return "Usuário logado via POST";
+            }
+            else
+            {
+                return "Usuario não Logado via POST";
+            }
         }
-        
+
+        public bool ValidaLogin(AcessoModel acesso)
+        {
+            bool logado = false;
+            if ((acesso.Usuario == "admin") && (acesso.Senha == "senha123"))
+                logado = true;
+            return logado;
+        }
+
         // POST: api/AutenticacaoAPI
         [HttpPost]
-        public void Post([FromBody]string value)
+        public string Post([FromBody]string value)
         {
         }
-        
+        private bool 
         // PUT: api/AutenticacaoAPI/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody]string value)
