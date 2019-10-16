@@ -28,13 +28,10 @@ namespace PW2Login.Controllers
             acesso.Senha = senha;
 
             if (ValidaLogin(acesso))
-            {
                 return "Usuário logado via POST";
-            }
             else
-            {
                 return "Usuario não Logado via POST";
-            }
+            
         }
 
         public bool ValidaLogin(AcessoModel acesso)
@@ -47,20 +44,24 @@ namespace PW2Login.Controllers
 
         // POST: api/AutenticacaoAPI
         [HttpPost]
-        public string Post([FromBody]string value)
+        public string Post([FromBody]AcessoModel acesso)
         {
+                if (ValidaLogin(acesso))
+                    return "Usuario logado via Post";
+                else
+                    return "Usuario não logado via Post";
         }
-        private bool 
         // PUT: api/AutenticacaoAPI/5
-        [HttpPut("{id}")]
+        [HttpPutAttribute("{id}")]
         public void Put(int id, [FromBody]string value)
         {
         }
         
         // DELETE: api/ApiWithActions/5
-        [HttpDelete("{id}")]
+       [HttpDelete("{id}")]
         public void Delete(int id)
         {
         }
+        
     }
 }
