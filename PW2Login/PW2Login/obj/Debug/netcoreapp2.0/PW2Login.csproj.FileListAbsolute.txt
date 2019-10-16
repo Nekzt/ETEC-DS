@@ -1,0 +1,11 @@
+C:\Users\TI\Desktop\ETEC-DS\PW2Login\PW2Login\bin\Debug\netcoreapp2.0\PW2Login.deps.json
+C:\Users\TI\Desktop\ETEC-DS\PW2Login\PW2Login\bin\Debug\netcoreapp2.0\PW2Login.runtimeconfig.json
+C:\Users\TI\Desktop\ETEC-DS\PW2Login\PW2Login\bin\Debug\netcoreapp2.0\PW2Login.runtimeconfig.dev.json
+C:\Users\TI\Desktop\ETEC-DS\PW2Login\PW2Login\bin\Debug\netcoreapp2.0\PW2Login.dll
+C:\Users\TI\Desktop\ETEC-DS\PW2Login\PW2Login\obj\Debug\netcoreapp2.0\PW2Login.csprojAssemblyReference.cache
+C:\Users\TI\Desktop\ETEC-DS\PW2Login\PW2Login\obj\Debug\netcoreapp2.0\PW2Login.csproj.CoreCompileInputs.cache
+C:\Users\TI\Desktop\ETEC-DS\PW2Login\PW2Login\obj\Debug\netcoreapp2.0\PW2Login.AssemblyInfoInputs.cache
+C:\Users\TI\Desktop\ETEC-DS\PW2Login\PW2Login\obj\Debug\netcoreapp2.0\PW2Login.AssemblyInfo.cs
+C:\Users\TI\Desktop\ETEC-DS\PW2Login\PW2Login\bin\Debug\netcoreapp2.0\PW2Login.pdb
+C:\Users\TI\Desktop\ETEC-DS\PW2Login\PW2Login\obj\Debug\netcoreapp2.0\PW2Login.dll
+C:\Users\TI\Desktop\ETEC-DS\PW2Login\PW2Login\obj\Debug\netcoreapp2.0\PW2Login.pdb
