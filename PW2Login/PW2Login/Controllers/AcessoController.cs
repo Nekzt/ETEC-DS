@@ -14,7 +14,7 @@ namespace PW2Login.Controllers
             return View();
 
         }
-        public IActionResult Longin(AcessoModel acesso)
+        public IActionResult Logging(AcessoModel acesso)
         {
             AutenticacaoAPIController autenticacaoAPI = new AutenticacaoAPIController();
             if (autenticacaoAPI.ValidaLogin(acesso))
