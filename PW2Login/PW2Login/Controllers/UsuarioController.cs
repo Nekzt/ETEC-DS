@@ -87,20 +87,19 @@ namespace PW2Login.Controllers
         }
 
         // GET: Usuario/Delete/5
-        public ActionResult Delete(int id)
+       public ActionResult Deletar (int id)
         {
             UsuarioModel usuario = listaUsuario.FirstOrDefault(user => user.Id == id);
             return View(usuario);
         }
-
-        // POST: Usuario/Delete/5
+    
+        //POST: Usuario/Deletar/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Deletar(UsuarioModel usuario)
+        public ActionResult Deletar (UsuarioModel usuario)
         {
             try
             {
-                // TODO: Add delete logic here
                 UsuarioModel deletarUsuario = listaUsuario.FirstOrDefault(user => user.Id == usuario.Id);
                 listaUsuario.Remove(deletarUsuario);
                 return RedirectToAction("Consultar", "Usuario");
