@@ -57,9 +57,10 @@ namespace PW2Login.Controllers
         }
 
         // GET: Usuario/Edit/5
-        public ActionResult Edit(int id)
+        public ActionResult Editar(int id)
         {
-            return View();
+            UsuarioModel usuario = listaUsuario.FirstOrDefault(user => user.Id == id);
+            return View(usuario);
         }
 
         // POST: Usuario/Edit/5

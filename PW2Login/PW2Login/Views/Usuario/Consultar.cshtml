@@ -7,7 +7,7 @@
 <h2>Consultar</h2>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Cadastrar">Novo Cadastro</a>
 </p>
 <table class="table">
     <thead>
@@ -49,9 +49,9 @@
                 @Html.DisplayFor(modelItem => item.Email)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Editar", "Editar", new { id=item.Id }) |
+                @Html.ActionLink("Detalhar", "Detalhar", item) |
+                @Html.ActionLink("Deletar", "Deletar", new { id=item.Id })
             </td>
         </tr>
 }
