@@ -8,12 +8,15 @@ int pinRed = 8;
 int pinGreen = 9;
 int pinBlue = 10;
 
+int refreshRate = 300;
+int maxDist = 51;
+int distSteps = 4;
+int distStep = maxDist / distSteps;
+
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 Ultrasonic ultra(trig, echo);
 
-int maxDist = 51;
-int distStep = maxDist / 4;
-String corAtual;
+String curColor;
 int dist;
 
 void setup() {
@@ -21,7 +24,7 @@ void setup() {
   pinMode(pinRed, OUTPUT);
   pinMode(pinGreen, OUTPUT);
   pinMode(pinBlue, OUTPUT);
-  corAtual = blue();
+  curColor = blue();
 }
 
 void loop() {
@@ -31,7 +34,7 @@ void loop() {
   showColorLCD();
   showDistLCD();
   
-  delay(300);
+  delay(refreshRate);
   garbageCollect();
 }
 
@@ -39,24 +42,24 @@ void garbageCollect() {
   lcd.clear();
 }
 
-int getDist() {
+void getDist() {
   dist = ultra.Ranging(CM);
 }
 
 void setLight() {
   if (dist <= distStep) {
-    corAtual = red();
+    curColor = red();
   } else if (dist <= distStep * 2) {
-    corAtual = green();
+    curColor = green();
   } else if (dist <= distStep * 3) {
-    corAtual = blue();
+    curColor = blue();
   }
 }
 
 void showColorLCD() {
   lcd.setCursor(0,0);
   lcd.print("Cor: ");
-  lcd.print(corAtual);
+  lcd.print(curColor);
 }
 
 void showDistLCD() {
