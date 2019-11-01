@@ -29,6 +29,7 @@
                 <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">PW2Login</a>
             </div>
             <div class="navbar-collapse collapse">
+                @if ((Context.Session.GetString("Logged") != null) && (bool.Parse(Context.Session.GetString("Logged")) == true)){
                 <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
@@ -36,6 +37,21 @@
                     <li><a asp-area="" asp-controller="Acesso" asp-action="Login">Login</a></li>
                     <li><a asp-area="" asp-controller="Usuario" asp-action="Consultar">Usuarios</a></li>
                 </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a asp-area="" asp-controller="Acesso" asp-action="Logout">Logout</a></li>
+                </ul>
+                }
+                else
+                {
+                <ul class="nav navbar-nav">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a asp-area="" asp-controller="Acesso" asp-action="Login">Login</a></li>
+                </ul>
+                }
             </div>
         </div>
     </nav>
