@@ -5,13 +5,43 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="obj\Debug\netcoreapp2.0\PW2Login.AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="obj\Debug\netcoreapp2.0\PW2Login.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
     <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+    <PackageReference Include="MySql.Data" Version="8.0.18" />
   </ItemGroup>
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="obj\Debug\netcoreapp2.0\PW2Login.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\PW2Login.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\PW2Login.csprojAssemblyReference.cache" />
+    <None Include="obj\PW2Login.csproj.nuget.cache" />
+    <None Include="obj\PW2Login.csproj.nuget.g.props" />
+    <None Include="obj\PW2Login.csproj.nuget.g.targets" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\netcoreapp2.0\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.18\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

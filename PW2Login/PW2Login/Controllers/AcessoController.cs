@@ -28,7 +28,6 @@ namespace PW2Login.Controllers
                 return RedirectToAction("Login", "Acesso");
             }
         }
-
         public IActionResult Logout()
         {
             HttpContext.Session.SetString("Logged", "false");
